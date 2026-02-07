@@ -169,3 +169,7 @@ span{
     justify-content: space-evenly;
     
 }
+ul a{
+    display: block;
+    color: rgb(13, 144, 144);
+}
