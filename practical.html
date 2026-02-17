@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Form - Descriptive</title>
+</head>
+<body>
+
+    <h2>Customer Feedback</h2>
+
+    <form action="/submit" method="POST">
+        <p>
+            <label for="v1_name">Full Name:</label><br>
+            <input type="text" id="v1_name" name="name" required>
+        </p>
+
+        <p>
+            <label for="v1_email">Email Address:</label><br>
+            <input type="email" id="v1_email" name="email" required>
+        </p>
+
+        <p>
+            <strong>How was your experience?</strong><br>
+            <input type="radio" id="excellent" name="experience" value="excellent">
+            <label for="excellent">Excellent</label><br>
+            
+            <input type="radio" id="good" name="experience" value="good" checked>
+            <label for="good">Good</label><br>
+            
+            <input type="radio" id="fair" name="experience" value="fair">
+            <label for="fair">Fair</label><br>
+            
+            <input type="radio" id="bad" name="experience" value="bad">
+            <label for="bad">Bad</label><br>
+        </p>
+
+        <p>
+            <label for="v1_comments">Comments:</label><br>
+            <textarea id="v1_comments" name="comments" rows="5" cols="40"></textarea>
+        </p>
+
+        <p>
+            <button type="submit">Submit Feedback</button>
+        </p>
+    </form>
+
+</body>
+</html>
